@@ -10,12 +10,20 @@ Clonar el repositorio y ejecutar: npm install
 Ejecutar los siguientes comandos:
 
 - Consultar todos los productos: npm run start GET products
+
+<img width="1901" height="971" alt="image" src="https://github.com/user-attachments/assets/48f4ccfb-ed2c-4d23-a522-1a3706fa1bf0" />
   
 - Consultar un producto por ID: npm run start GET products/7
+
+<img width="1266" height="222" alt="image" src="https://github.com/user-attachments/assets/47456db9-8be7-4fc1-a9b6-3031ffdf93c8" />
  
 - Crear un producto nuevo: npm run start POST products "Remera negra" 29.99 "men's clothing"
 
+<img width="502" height="180" alt="image" src="https://github.com/user-attachments/assets/f8183847-e63a-49a9-a9b1-a411baa1c629" />
+
 - Eliminar un producto: npm run start DELETE products/7
+
+<img width="1273" height="223" alt="image" src="https://github.com/user-attachments/assets/fa2bbfa9-74c9-4e3c-896d-ce05ef784a94" />
 
 ## Tests
 Para correr las pruebas: npm test
