@@ -28,11 +28,13 @@ curl -X POST http://localhost:3000/auth/login \
 <img width="1125" height="75" alt="image" src="https://github.com/user-attachments/assets/7de6387d-dfc5-4c7d-b482-6f97ca80df2a" />
 
 
+
 Consultar todos los productos:
 
 curl -X GET http://localhost:3000/api/products -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE3ODMwMzEwNDQsImV4cCI6MTc4MzAzNDY0NH0.FD0piGfbgaKvzNFnOkxKMSmQGLjhQpFPwwGo_-i9vUM"
 
 <img width="1658" height="45" alt="image" src="https://github.com/user-attachments/assets/25b82ee6-7487-407a-a8bc-2df6e0476c88" />
+
 
 
 Consultar producto por ID:
