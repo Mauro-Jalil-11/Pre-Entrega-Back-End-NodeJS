@@ -8,8 +8,11 @@ Incluye autenticación con JWT y rutas protegidas para realizar operaciones CRUD
 Clonar el repositorio y ejecutar: 
 
 1 - git clone https://github.com/Mauro-Jalil-11/Pre-Entrega-Back-End-NodeJS
+
 2 - cd Pre-Entrega-Back-End-NodeJS
+
 3 - npm install
+
 4 - npm run start
 
 Configurar las variables de entorno en un archivo .env (ejemplo):
