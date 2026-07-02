@@ -24,7 +24,6 @@ FIREBASE_PROJECT_ID=ilevenn
 
 JWT_SECRET=clave_secreta
 
-Ejecutar el servidor: npm run start
 
 # Uso
 
