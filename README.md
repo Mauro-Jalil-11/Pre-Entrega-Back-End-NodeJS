@@ -23,7 +23,7 @@ Login - Obtener un token JWT:
 
 curl -X POST http://localhost:3000/auth/login \
   -H "Content-Type: application/json" \
-  -d '{"user":"admin","password":"admin"}'
+  -d '{"username":"admin","password":"1234"}'
 
 <img width="1125" height="75" alt="image" src="https://github.com/user-attachments/assets/7de6387d-dfc5-4c7d-b482-6f97ca80df2a" />
 
