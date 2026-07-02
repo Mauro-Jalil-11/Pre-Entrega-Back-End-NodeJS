@@ -45,6 +45,26 @@ curl -X GET http://localhost:3000/api/products/F6ANXg41yXnQ2rJMRNNy -H "Authoriz
 
 
 
+Crear producto:
+
+curl -X POST http://localhost:3000/api/products/create \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE3ODMwMzEwNDQsImV4cCI6MTc4MzAzNDY0NH0.FD0piGfbgaKvzNFnOkxKMSmQGLjhQpFPwwGo_-i9vUM" \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Medias","price":10}'
+
+  <img width="1259" height="85" alt="image" src="https://github.com/user-attachments/assets/6f0ff1fd-3eab-4da0-9712-93a06523749c" />
+
+
+
+  Eliminar Producto:
+
+  curl -X DELETE http://localhost:3000/api/products/mVKv5oFXdT9qRwy0yxCK \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE3ODMwMzEwNDQsImV4cCI6MTc4MzAzNDY0NH0.FD0piGfbgaKvzNFnOkxKMSmQGLjhQpFPwwGo_-i9vUM"
+
+  <img width="1241" height="59" alt="image" src="https://github.com/user-attachments/assets/9b57fc39-b13a-432a-9852-02314637e1e7" />
+
+
+
 
 
 
