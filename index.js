@@ -1,38 +1,35 @@
-import fetch from "node-fetch";
+import express from "express";
+import cors from "cors";
+import bodyParser from "body-parser";
+import dotenv from "dotenv";
+import productsRouter from "./products.routes.js";
+import authRouter from "./auth.routes.js";
 
-const args = process.argv.slice(2);
-const method = args[0];
-const endpoint = args[1];
-const extraArgs = args.slice(2);
+dotenv.config();
 
-const BASE_URL = "https://fakestoreapi.com/";
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-async function main() {
-  try {
-    let response;
+app.use(cors());
+app.use(bodyParser.json());
 
-    if (method === "GET") {
-      response = await fetch(BASE_URL + endpoint);
-    } else if (method === "POST") {
-      const [title, price, category] = extraArgs;
-      response = await fetch(BASE_URL + endpoint, {
-        method: "POST",
-        body: JSON.stringify({ title, price, category }),
-        headers: { "Content-Type": "application/json" },
-      });
-    } else if (method === "DELETE") {
-      response = await fetch(BASE_URL + endpoint, { method: "DELETE" });
-    } else {
-      console.log("Método no soportado");
-      return;
-    }
+app.get("/", (req, res) => {
+  res.send("Servidor funcionando correctamente");
+});
 
-    const data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error("Error:", error.message);
-  }
-}
+app.use(productsRouter);
+app.use(authRouter);
 
-main();
+app.use((req, res) => {
+  res.status(404).json({ error: "Ruta no encontrada" });
+});
+
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en http://localhost:${PORT}`);
+});
+
+
+
+
+
 

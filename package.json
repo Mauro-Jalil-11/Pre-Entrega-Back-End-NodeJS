@@ -1,7 +1,7 @@
 {
   "name": "pre-entrega",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este repositorio esta pensado para que cada alumno desarrolle su propia solucion en `index.js` a partir de los requerimientos compartidos en clase.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -16,6 +16,24 @@
     "mocha": "^11.7.5"
   },
   "dependencies": {
+    "body-parser": "^2.3.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "firebase": "^12.15.0",
+    "jsonwebtoken": "^9.0.3",
     "node-fetch": "^3.3.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JePaFe/Testing-Pre-Entrega-Back-End-Node-JS.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/JePaFe/Testing-Pre-Entrega-Back-End-Node-JS/issues"
+  },
+  "homepage": "https://github.com/JePaFe/Testing-Pre-Entrega-Back-End-Node-JS#readme"
 }
