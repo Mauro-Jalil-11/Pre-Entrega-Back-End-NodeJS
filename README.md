@@ -19,7 +19,9 @@ Clonar el repositorio y ejecutar:
 Configurar las variables de entorno en un archivo .env (ejemplo):
 
 PORT=3000
+
 FIREBASE_PROJECT_ID=ilevenn
+
 JWT_SECRET=clave_secreta
 
 Ejecutar el servidor: npm run start
