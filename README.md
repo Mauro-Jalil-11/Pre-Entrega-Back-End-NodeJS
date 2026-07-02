@@ -15,6 +15,7 @@ Clonar el repositorio y ejecutar:
 
 4 - npm run start
 
+
 Configurar las variables de entorno en un archivo .env (ejemplo):
 
 PORT=3000
